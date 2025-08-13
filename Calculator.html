@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGrade Calculator</title>
+</head>
+<body>
+    <script>
+        let maths = prompt("Enter your marks in Maths:");
+        let physics = prompt("Enter your marks in Physics:");
+        let chemistry = prompt("Enter your marks in Chemistry:");
+        let english = prompt("Enter your marks in English:");
+        let computer = prompt("Enter your marks in Computer:");
+        let total = parseInt(maths) + parseInt(physics) + parseInt(chemistry) + parseInt(english) + parseInt(computer);
+        let percentage = (total/500) * 100;
+        let average = total / 5;
+        let grade;
+        if (percentage>= 90) {
+                grade = "A+";
+            } else if (percentage >= 80) {
+                grade = "A";
+            } else if (percentage >= 70) {
+                grade = "B";
+            } else if (percentage >= 60) {
+                grade = "C";
+            } else if (percentage >= 50) {
+                grade = "D";
+            } else {
+                grade = "F";
+            }
+            alert("Total Marks: ${total}\nPercentage: ${percentage}%\nAverage: ${average}\nGrade: ${grade}");
+    </script>
+    
+</body>
+</html>
